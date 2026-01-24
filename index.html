@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Valentine ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔐 PASSWORD SCREEN -->
+<div id="lockScreen" class="lock-screen">
+  <h1>🔒 Private</h1>
+  <p>Only for the girl who owns my heart ❤️</p>
+  <input type="password" id="passwordInput" placeholder="Enter password">
+  <button onclick="unlock()">Unlock 💖</button>
+  <p id="error"></p>
+</div>
+
+<!-- 🌍 MAIN WEBSITE -->
+<div id="website" class="hidden">
+
+  <h1>For My Janu ❤️</h1>
+  <p class="subtitle">This is my little world with you in it.</p>
+
+  <!-- NAV BUTTONS -->
+  <div class="buttons">
+    <button onclick="openPage('music')">🎶 Music</button>
+    <button onclick="openPage('memories')">📸 Memories</button>
+    <button onclick="openPage('letter')">💌 Letter</button>
+  </div>
+
+  <!-- 🎶 MUSIC PAGE -->
+  <div id="music" class="page hidden">
+    <h2>Our Songs 🎶</h2>
+    <audio controls src="song1.mp3"></audio>
+    <audio controls src="song2.mp3"></audio>
+  </div>
+
+  <!-- 📸 MEMORIES PAGE -->
+  <div id="memories" class="page hidden">
+    <h2>Our Memories 📸</h2>
+    <div class="gallery">
+      <img src="photo1.jpg">
+      <img src="photo2.jpg">
+      <img src="photo3.jpg">
+    </div>
+  </div>
+
+  <!-- 💌 LETTER PAGE -->
+  <div id="letter" class="page hidden">
+    <h2>My Letter to You 💌</h2>
+    <p class="letter">
+      My Janu ❤️<br><br>
+      You are my safe place, my smile, and my favorite thought.
+      Loving you is my easiest promise.<br><br>
+      I choose you — today, tomorrow, always. 💖
+    </p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
